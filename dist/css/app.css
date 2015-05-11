@@ -1,0 +1,362 @@
+/* General CSS */
+body .container {
+  margin-top: 20px;
+}
+
+.list-group-controls {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.list-group-controls > a {
+  margin-left: 10px;
+}
+
+/* TODO CSS */
+.todo-list .completed .todo-item {
+  text-decoration: line-through;
+}
+.todo-list .dark-background-item {
+  color: #ffffff;
+}
+.todo-list .todo-item {
+  padding-left: 23px;
+  padding-right: 55px;
+  cursor: pointer;
+}
+.todo-list .editing .todo-item {
+  padding-left: 0px;
+}
+.todo-list .todo-item .icheckbox_minimal-grey, 
+.todo-list .todo-item .icheckbox_polaris, 
+.todo-item-loading {
+  margin-left: -29px;
+  margin-right: 5px;
+}
+.todo-list .dark-background-item .todo-item .icheckbox_minimal-grey, 
+.todo-list .dark-background-item .todo-item .icheckbox_polaris {
+  margin-left: -23px;
+}
+.todo-list .list-group-controls {
+  top: 12px;
+}
+.todo-list .list-group-controls a {
+  color: #434a54;
+  font-size: 15px;
+}
+.todo-item-loading {
+  background: url("../images/todo-ajax-loader.gif") no-repeat;
+  margin-left: -20px;
+  margin-top: 5px;
+  height: 11px;
+  width: 16px;
+}
+/* EOF TODO CSS */
+
+/* PANEL */
+.panel .panel-heading {
+  padding: 10px;
+}
+.panel .panel-heading .panel-title {
+  margin-left: 7px;
+}
+.panel .panel-title {
+  line-height: 30px;
+  display: block;
+  float: left;
+}
+ul.panel-controls {
+  float: right;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  position: relative;
+}
+ul.panel-controls > li {
+  float: left;
+}
+ul.panel-controls > li > a {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 28px;
+  color: #FFF;
+  border: 1px solid #FFF;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: 3px;
+}
+ul.panel-controls > li > a.control-primary {
+  color: #33414e;
+  border-color: #33414e;
+}
+ul.panel-controls > li > a.control-success {
+  color: #95b75d;
+  border-color: #95b75d;
+}
+ul.panel-controls > li > a.control-info {
+  color: #3fbae4;
+  border-color: #3fbae4;
+}
+ul.panel-controls > li > a.control-warning {
+  color: #fea223;
+  border-color: #fea223;
+}
+ul.panel-controls > li > a.control-danger {
+  color: #b64645;
+  border-color: #b64645;
+}
+ul.panel-controls > li > a:hover {
+  border-color: #FFF;
+  color: #434a54;
+}
+ul.panel-controls > li > a.rounded {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* EOF PANEL */
+
+/* iCheck plugin Minimal skin, black
+        ----------------------------------- */
+.check {
+  font-weight: 400;
+  line-height: 20px;
+  margin: 5px 0px;
+  cursor: pointer;
+}
+.check .icheckbox_minimal-grey,
+.check .iradio_minimal-grey {
+  margin-right: 5px;
+  margin-top: -2px;
+}
+.check.disabled {
+  color: #AAA;
+}
+.icheckbox_minimal-grey,
+.iradio_minimal-grey {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background: url("../images/icheck/grey.png") no-repeat;
+  border: none;
+  cursor: pointer;
+}
+.icheckbox_minimal-grey {
+  background-position: 0 0;
+}
+.icheckbox_minimal-grey.hover {
+  background-position: -20px 0;
+}
+.icheckbox_minimal-grey.checked {
+  background-position: -40px 0;
+}
+.icheckbox_minimal-grey.disabled {
+  background-position: -60px 0;
+  cursor: default;
+}
+.icheckbox_minimal-grey.checked.disabled {
+  background-position: -80px 0;
+}
+.iradio_minimal-grey {
+  background-position: -100px 0;
+}
+.iradio_minimal-grey.hover {
+  background-position: -120px 0;
+}
+.iradio_minimal-grey.checked {
+  background-position: -140px 0;
+}
+.iradio_minimal-grey.disabled {
+  background-position: -160px 0;
+  cursor: default;
+}
+.iradio_minimal-grey.checked.disabled {
+  background-position: -180px 0;
+}
+
+/* iCheck plugin Futurico red
+----------------------------------- */
+.icheckbox_flat-red,
+.iradio_flat-red {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url("../images/icheck/red.png") no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_flat-red {
+    background-position: 0 0;
+}
+    .icheckbox_flat-red.checked {
+        background-position: -22px 0;
+    }
+    .icheckbox_flat-red.disabled {
+        background-position: -44px 0;
+        cursor: default;
+    }
+    .icheckbox_flat-red.checked.disabled {
+        background-position: -66px 0;
+    }
+
+.iradio_flat-red {
+    background-position: -88px 0;
+}
+    .iradio_flat-red.checked {
+        background-position: -110px 0;
+    }
+    .iradio_flat-red.disabled {
+        background-position: -132px 0;
+        cursor: default;
+    }
+    .iradio_flat-red.checked.disabled {
+        background-position: -154px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_flat-red,
+    .iradio_flat-red {
+        background-image: url("../images/icheck/red@2x.png");
+        -webkit-background-size: 176px 22px;
+        background-size: 176px 22px;
+    }
+}
+
+/* iCheck plugin Futurico skin
+----------------------------------- */
+.icheckbox_futurico,
+.iradio_futurico {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 16px;
+    height: 17px;
+    background: url("../images/icheck/futurico.png") no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_futurico {
+    background-position: 0 0;
+}
+    .icheckbox_futurico.checked {
+        background-position: -18px 0;
+    }
+    .icheckbox_futurico.disabled {
+        background-position: -36px 0;
+        cursor: default;
+    }
+    .icheckbox_futurico.checked.disabled {
+        background-position: -54px 0;
+    }
+
+.iradio_futurico {
+    background-position: -72px 0;
+}
+    .iradio_futurico.checked {
+        background-position: -90px 0;
+    }
+    .iradio_futurico.disabled {
+        background-position: -108px 0;
+        cursor: default;
+    }
+    .iradio_futurico.checked.disabled {
+        background-position: -126px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_futurico,
+    .iradio_futurico {
+        background-image: url("../images/icheck/futurico@2x.png");
+        -webkit-background-size: 144px 19px;
+        background-size: 144px 19px;
+    }
+}
+
+/* iCheck plugin Polaris skin
+----------------------------------- */
+.icheckbox_polaris,
+.iradio_polaris {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 29px;
+    height: 29px;
+    background: url("../images/icheck/polaris.png") no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_polaris {
+    background-position: 0 0;
+}
+    .icheckbox_polaris.hover {
+        background-position: -31px 0;
+    }
+    .icheckbox_polaris.checked {
+        background-position: -62px 0;
+    }
+    .icheckbox_polaris.disabled {
+        background-position: -93px 0;
+        cursor: default;
+    }
+    .icheckbox_polaris.checked.disabled {
+        background-position: -124px 0;
+    }
+
+.iradio_polaris {
+    background-position: -155px 0;
+}
+    .iradio_polaris.hover {
+        background-position: -186px 0;
+    }
+    .iradio_polaris.checked {
+        background-position: -217px 0;
+    }
+    .iradio_polaris.disabled {
+        background-position: -248px 0;
+        cursor: default;
+    }
+    .iradio_polaris.checked.disabled {
+        background-position: -279px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_polaris,
+    .iradio_polaris {
+        background-image: url("../images/icheck/polaris@2x.png");
+        -webkit-background-size: 310px 31px;
+        background-size: 310px 31px;
+    }
+}
+/* END icheckbox */
