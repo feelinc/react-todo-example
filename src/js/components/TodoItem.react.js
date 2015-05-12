@@ -204,8 +204,9 @@ var TodoItem = React.createClass({
       .on('ifChecked', todo.complete)
       .on('ifChanged', this._onToggleComplete);
 
-      jQuery('#todo-colorpicker-input-group-' + todo.id).colorpicker()
-      .on('hide', this._onColorChange);
+      jQuery('#todo-colorpicker-input-group-' + todo.id).colorpicker({
+        input: '#todo-colorpicker-input-' + todo.id
+      }).on('changeColor', this._onColorChange);
     }
   },
 

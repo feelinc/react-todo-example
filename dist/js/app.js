@@ -19771,8 +19771,9 @@ var TodoItem = React.createClass({displayName: "TodoItem",
       .on('ifChecked', todo.complete)
       .on('ifChanged', this._onToggleComplete);
 
-      jQuery('#todo-colorpicker-input-group-' + todo.id).colorpicker()
-      .on('hide', this._onColorChange);
+      jQuery('#todo-colorpicker-input-group-' + todo.id).colorpicker({
+        input: '#todo-colorpicker-input-' + todo.id
+      }).on('changeColor', this._onColorChange);
     }
   },
 
@@ -19815,8 +19816,9 @@ var TodoTextInput = React.createClass({displayName: "TodoTextInput",
   },
 
   componentDidMount: function() {
-    jQuery('#todo-colorpicker-input-group').colorpicker()
-    .on('hide', this._onColorChange);
+    jQuery('#todo-colorpicker-input-group').colorpicker({
+      input: '#todo-colorpicker-input'
+    }).on('changeColor', this._onColorChange);
   },
 
   /**
@@ -19915,15 +19917,6 @@ var Dispatcher = require('flux').Dispatcher;
 module.exports = new Dispatcher();
 
 },{"flux":1}],165:[function(require,module,exports){
-/*
- * This file is part of the Keys Digital Delivery
- *
- * Author: Sulaeman <me@sulaeman.com>.
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
- 
 var React = require('react');
 
 var TodoApp = require('./components/TodoApp.react');

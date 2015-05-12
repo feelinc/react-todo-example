@@ -22,8 +22,9 @@ var TodoTextInput = React.createClass({
   },
 
   componentDidMount: function() {
-    jQuery('#todo-colorpicker-input-group').colorpicker()
-    .on('hide', this._onColorChange);
+    jQuery('#todo-colorpicker-input-group').colorpicker({
+      input: '#todo-colorpicker-input'
+    }).on('changeColor', this._onColorChange);
   },
 
   /**
